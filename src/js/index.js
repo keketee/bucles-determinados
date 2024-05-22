@@ -132,8 +132,8 @@ multiplication(7);
 //   - "En el año X cumpliste 3 años"
 //     ....
 
-const ageAndYear = (data1, data2) => {
-  const nacimiento = data2 - data1;
+const ageAndYear = (year, age) => {
+  const nacimiento = year - age;
   console.log(`naciste en el año ${nacimiento}`);
 
   for (let counter = 2024; counter >= 0; counter--) {}
