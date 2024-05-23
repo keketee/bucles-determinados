@@ -181,7 +181,7 @@ const twoArrays = () => {
     array2.push(number2);
   }
 
-  if (number1.include(array1)) {
+  if (array1.includes(number1)) {
   }
 };
 
