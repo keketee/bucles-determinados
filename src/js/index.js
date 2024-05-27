@@ -181,60 +181,49 @@ const twoArrays = () => {
     array2.push(number2);
   }
 
-  console.log(array1)
-  console.log(array2)
-for(let counter = 0; counter < 5; counter++){
-if(array1.includes(array2[counter]))(
-  console.log(`los valores que se repiten son ${array1} y ${array2}`)
-)
-}
-  
+  console.log(array1);
+  console.log(array2);
+  for (let counter = 0; counter < 5; counter++) {
+    if (array1.includes(array2[counter])) console.log(`los valores que se repiten son ${array1} y ${array2}`);
+  }
 };
 
 twoArrays();
 
 //- 8 Crea una función que reciba un número y te diga si es primo o no. Un número primo es aquel que sólo puede dividirse por si mismo
 
-
 const Primo = number => {
-  
   let numberprimo = true;
 
   if (number <= 1) {
     numberprimo = false;
   } else {
-      
-      for (let counter = 2; counter <= number / 2; counter++) {
-          if (number % counter === 0) {
-            numberprimo = false;
-          }
+    for (let counter = 2; counter <= number / 2; counter++) {
+      if (number % counter === 0) {
+        numberprimo = false;
       }
+    }
   }
 
   if (numberprimo) {
-      console.log(`el numero ${number} es primo`);
+    console.log(`el numero ${number} es primo`);
   } else {
-      console.log(`el numero ${number} no es primo`);
+    console.log(`el numero ${number} no es primo`);
   }
-}
-
+};
 
 Primo(15);
-
 
 // - 9 Crea una función que reciba un array de 10 números, imprime por consola cada número, su cuadrado y su cubo en este formato:
 //"Número: 2 - Cuadrado: 4 - Cubo: 8".
 
-
-const printSquareAndCube =array=> {
+const printSquareAndCube = array => {
   for (let counter = 0; counter < array.length; counter++) {
     const number = array[counter];
     const square = Math.pow(number, 2);
     const cube = Math.pow(number, 3);
     console.log(`Number: ${number} - Square: ${square} - Cube: ${cube}`);
   }
-}
-
-
+};
 
 printSquareAndCube([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
